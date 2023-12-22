@@ -1,6 +1,6 @@
 <?php
 
-class Animaux {
+class Animal {
     private int $nbPattes;
     private string $couleur;
     protected int $poids;

@@ -1,7 +1,8 @@
 <?php
 
-require_once 'animauxTools.php' ;
-class Chien extends Animaux {
+require_once 'Animal.php' ;
+
+class Chien extends Animal {
     public string $race;
 
     public function __construct(string $couleur, int $poids, string $pelage, string $race)

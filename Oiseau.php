@@ -1,8 +1,8 @@
 <?php
 
-require_once 'animauxTools.php' ;
+require_once 'Animal.php' ;
 
-class oiseau extends Animaux {
+class Oiseau extends Animal {
     public int $ailes;
 
     public function __construct(int $nbPattes, string $couleur, int $poids, string $pelage, int $ailes)
@@ -38,6 +38,6 @@ class oiseau extends Animaux {
     }
 }
 
-$canard = new oiseau(2, 'bleu', 2, 'plumes', 2);
+$canard = new Oiseau(2, 'bleu', 2, 'plumes', 2);
 
 $canard->disMoiTout();

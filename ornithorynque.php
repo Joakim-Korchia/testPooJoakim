@@ -1,7 +1,7 @@
 <?php
 
-require_once 'animauxTools.php' ;
-class ornithorynque extends Animaux {
+require_once 'Animal.php' ;
+class Ornithorynque extends Animal {
     public int $queue;
     public string $nez;
     public function __construct(string $couleur, int $poids, string $pelage, int $queue,string $nez )
@@ -39,6 +39,6 @@ class ornithorynque extends Animaux {
     }
 }
 
-$ornithorynque = new ornithorynque('rouge', 3, 'taupe', 1, 'bec');
+$Ornithorynque = new Ornithorynque('rouge', 3, 'taupe', 1, 'bec');
 
-$ornithorynque->disMoiTout();
+$Ornithorynque->disMoiTout();
