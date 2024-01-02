@@ -1,10 +1,21 @@
 <?php
 
+/**
+ * Classe représentant un animal.
+ * 
+ * Cette classe fournit la structure de base pour représenter un animal,
+ * avec des attributs pour le nombre de pattes, la couleur, le poids et le type de pelage.
+ */
+
+
 class Animal {
     private int $nbPattes;
     private string $couleur;
     protected int $poids;
     protected string $pelage;
+
+    /**
+     * Constructeur de la classe Animal. */
 
     public function __construct(int $nbPattes, string $couleur, int $poids, string $pelage)
     {
@@ -17,12 +28,19 @@ class Animal {
     }
 
     /**
+     * Récupère le nombre de pattes de l'animal.
+     */
+
+    /**
      * @return int
      */
     public function getNbPattes(): int
     {
         return $this->nbPattes;
     }
+    /**
+     * Définit le nombre de pattes de l'animal.
+     */ 
 
     /**
      * @param int $nbPattes
@@ -31,6 +49,9 @@ class Animal {
     {
         $this->nbPattes = $nbPattes;
     }
+    /**
+     * Récupère la couleur de l'animal.
+     */
 
     /**
      * @return string
@@ -39,6 +60,9 @@ class Animal {
     {
         return $this->couleur;
     }
+     /**
+     * Définit la couleur de l'animal.
+     */
 
     /**
      * @param string $couleur
@@ -49,13 +73,19 @@ class Animal {
     }
 
     /**
+     * Récupère le poids de l'animal.
+     */
+    /**
      * @return int Poids de l'animal en kg
      */
     public function getPoids(): int
     {
         return $this->poids;
     }
-
+    
+    /**
+     * Définit le poids de l'animal.
+     */
     /**
      * @param int $poids Poids de l'animal en kg
      */
@@ -72,6 +102,9 @@ class Animal {
         }
     }*/
 
+     /**
+     * Récupère le type de pelage de l'animal.
+     */
     /**
      * @return string
      */
@@ -80,6 +113,9 @@ class Animal {
         return $this->pelage;
     }
 
+     /**
+     * Définit le type de pelage de l'animal.
+     */
     /**
      * @param string $pelage
      */
@@ -88,6 +124,10 @@ class Animal {
         $this->pelage = $pelage;
     }
 
+    /**
+     * Affiche toutes les caractéristiques de l'animal.
+     * Imprime le nombre de pattes, la couleur, le poids et le pelage de l'animal.
+     */
     public function disMoiTout(): void
 
 
